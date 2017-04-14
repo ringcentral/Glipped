@@ -1,0 +1,18 @@
+
+/*div {*/
+    /*border: 2px solid black;*/
+    /*margin: 10px;*/
+/*}*/
+
+#container {
+    width: 640px; /*can be in percentage also.*/
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+#form-horizontal {
+    width:70%; /* 70% of the parent*/
+    margin:10px auto;
+}

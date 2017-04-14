@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript SDK &mdash; RingCentral&trade; Platform</title>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/views/common.css">
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+
+<div class="container">
+
+    <hr>
+
+    <div class="well text-center">
+
+        <h1>Glip Invite Users by Email</h1>
+        <img class="logo" src="http://localhost:8999/glip.png" id="logo" width="112px" height="112px">
+        <hr>
+
+
+            <div class="form-horizontal">
+
+                <div class="form-group">
+                    <div class="center-block" >
+                        <input type="email" class="form-control" id="invite-email" placeholder="Enter email" name="email">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="panel-footer text-center">
+                <button type="submit" class="btn btn-primary" onclick="demo.sendInvite($('#invite-email').val());">Invite</button>
+            </div>
+
+
+    </div>
+
+    <hr>
+
+    <p class="text-center text-muted">
+        &copy; 1999 &ndash; <span id="date"></span> RingCentral&trade;, Inc. All rights reserved.
+        <script> document.getElementById('date').innerHTML = (new Date()).getFullYear().toString(); </script>
+    </p>
+
+</div>
+
+<script>
+
+    var InviteDemo = function() {
+        this.sendInvite = function(userInvite='') {
+            console.log('The email id padded to post method is ', userInvite);
+            $.post( '/inviteUser', {userInvite: userInvite}, function( data ) {
+                alert('Invite user executed');
+            });
+        }
+    }
+
+    var demo = new InviteDemo();
+
+    $(function() {
+        console.log( "ready!" );
+    });
+
+</script>
+
+</body>
+</html>
