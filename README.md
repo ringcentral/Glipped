@@ -14,14 +14,8 @@ Express 4.11.xx as minimum.
 
 ```bash
 $ cd glipped
-```
-
-
-
-```bash
 $ npm install
 ```
-
 
 ## Run the Program
 
@@ -29,6 +23,7 @@ $ npm install
 ```bash
 $ cp config-sample.env.txt .env
 $ vi .env
+$ npm start
 ```
 
 
