@@ -1,8 +1,8 @@
-
-/*div {*/
-    /*border: 2px solid black;*/
-    /*margin: 10px;*/
-/*}*/
+div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #container {
     width: 640px; /*can be in percentage also.*/
@@ -12,7 +12,4 @@
     position: relative;
 }
 
-#form-horizontal {
-    width:70%; /* 70% of the parent*/
-    margin:10px auto;
-}
+#svgMain {margin-left:auto; margin-right:auto; display:block; margin-top: 100px;}

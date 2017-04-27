@@ -5,68 +5,58 @@
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="/views/common.css">
+    <link rel="stylesheet"  type="text/css" href="http://localhost:8080/views/common.css">
     <meta charset="UTF-8">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
 <body>
-
 <div class="container">
-
-    <hr>
-
-    <div class="well text-center">
-
-        <h1>Glip Invite Users by Email</h1>
-        <img class="logo" src="http://localhost:8080/glip.png" id="logo" width="112px" height="112px">
-        <hr>
-
-
-            <div class="form-horizontal">
-
-                <div class="form-group">
-                    <div class="center-block" >
-                        <input type="email" class="form-control" id="invite-email" placeholder="Enter email" name="email">
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="panel-footer text-center">
-                <button type="submit" class="btn btn-primary" onclick="demo.sendInvite($('#invite-email').val());">Invite</button>
-            </div>
-
-
+    <br><br><br><br>
+    <div class="text-center">
+        <img class="logo" src="http://localhost:8080/assets/glip.png" id="logo" width="112px" height="112px">
     </div>
-
-    <hr>
-
+    <br><br>
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-4">
+            <div class="input-group">
+                <input type="email" placeholder="Email" id="invite-email" class="form-control" />
+                <span class="input-group-btn">
+                <button class="btn btn-primary" id="invite-button" type="submit" onclick="demo.sendInvite($('#invite-email').val());">Invite!</button>
+            </span>
+            </div>
+        </div>
+    </div>
+    <br><br>
     <p class="text-center text-muted">
         &copy; 1999 &ndash; <span id="date"></span> RingCentral&trade;, Inc. All rights reserved.
         <script> document.getElementById('date').innerHTML = (new Date()).getFullYear().toString(); </script>
     </p>
-
 </div>
 
 <script>
-
     var InviteDemo = function() {
         this.sendInvite = function(userInvite='') {
             console.log('The email id padded to post method is ', userInvite);
             $.post( '/inviteUser', {userInvite: userInvite}, function( data ) {
-                alert('Invite user executed');
+                console.log("Back the funciton ");
+                console.log("the response back is :" + data);
+                $('#invite-email').remove();
+                $("#invite-button").attr("class", "btn btn-success").html('You just got Glipped, Check your inbox !').attr('disabled', 'disabled').css({
+                    'position' : 'absolute',
+                    'left' : '50%',
+                    'top' : '50%',
+                    'margin-left' : -$('#invite-button').outerWidth()/2,
+                    'margin-top' : -$('#invite-button').outerHeight()/2
+                });
             });
         }
     }
-
     var demo = new InviteDemo();
-
     $(function() {
         console.log( "ready!" );
     });
 
 </script>
-
 </body>
 </html>
