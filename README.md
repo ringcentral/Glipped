@@ -6,7 +6,7 @@
  
 # Glipped
 
-A quick way to imple Express App to invite users to Glip Groups.
+A simple Express App to invite users to Glip Groups.
  
  
 ## Requirement
