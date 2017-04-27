@@ -1,6 +1,11 @@
+[![Build Status](https://travis-ci.org/anilkumarbp/Glipped.svg?branch=master)](https://travis-ci.org/anilkumarbp/Glipped)
+[![Code Climate](https://img.shields.io/codeclimate/github/anilkumarbp/Glipped.svg)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 # Glipped
 
-This is a simple Express App to invite users to Glip Groups.
+A quick way to imple Express App to invite users to Glip Groups.
  
  
 ## Requirement
