@@ -1,18 +1,26 @@
 {
-  "author": "Glipped",
-  "description": "Simple Express Invite Users in Glip",
-  "version": "0.0.0",
+  "name": "Glipped",
+  "version": "1.0.0",
+  "description": "Simple Express App using Swig Templating Engine to Invite Users in Glip",
+  "license": "MIT",
   "homepage": "https://developer.ringcentral.com/",
+  "author": "AKBP <anil.kumar@ringcentral.com> (https://github.com/anilkumarbp)",
   "repository": {
     "type": "git",
     "url": "https://github.com/anilkumarbp/Glipped"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "jest"
   },
   "engines": {
     "node": "~0.4.12"
   },
+  "keywords": [
+    "Glip",
+    "RingCentral"
+  ],
+  "bugs": "https://github.com/anilkumarbp/Glipped/issues",
   "dependencies": {
     "body-parser": "latest",
     "consolidate": "^0.14.5",
@@ -22,5 +30,14 @@
     "ringcentral": "^3.1.1",
     "swig": "^1.4.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "jest": "^19.0.2",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/test/"
+    ]
+  }
 }
