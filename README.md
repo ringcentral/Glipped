@@ -2,6 +2,8 @@
 [![Code Climate](https://img.shields.io/codeclimate/github/anilkumarbp/Glipped.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+![APP screenshots](assets/demo.png) 
+
 
 # Glipped
 
@@ -10,8 +12,8 @@ A quick way to imple Express App to invite users to Glip Groups.
  
 ## Requirement
 
-Node.js 4.2 as mimimum.  
-Express 4.11.xx as minimum.
+* Node - 7.4.0  
+* Express - 4.11.xx 
 
 
 
@@ -38,5 +40,6 @@ Go to the URL:
 http://localhost:8080
 ````
 
-Then click the `Invite` button to invite users to Glip.
+Then click the `Glip` badge to invite users to Glip.
 
+![APP screenshots](assets/badge.png) 
