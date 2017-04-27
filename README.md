@@ -2,9 +2,8 @@
 [![Code Climate](https://img.shields.io/codeclimate/github/anilkumarbp/Glipped.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![APP screenshots](assets/demo.png) 
-
-
+![APP screenshots](assets/demo.png)
+ 
 # Glipped
 
 A quick way to imple Express App to invite users to Glip Groups.
@@ -14,7 +13,6 @@ A quick way to imple Express App to invite users to Glip Groups.
 
 * Node - 7.4.0  
 * Express - 4.11.xx 
-
 
 
 ## Installation via NPM
