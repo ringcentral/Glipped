@@ -11,7 +11,8 @@
   },
   "scripts": {
     "start": "node app.js",
-    "test": "jest"
+    "test": "./node_modules/mocha/bin/mocha test/**/*-test.js --reporter spec"
+
   },
   "engines": {
     "node": "~0.4.12"
@@ -33,7 +34,10 @@
   "devDependencies": {
     "jest": "^19.0.2",
     "chai": "^3.5.0",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "co-mocha": "1.1.2",
+    "sinon": "1.17.4",
+    "sinon-chai": "2.8.0"
   },
   "jest": {
     "testMatch": [
