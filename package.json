@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "node app.js",
-    "test": "./node_modules/mocha/bin/mocha test/**/*-test.js --reporter spec"
+    "test": "mocha"
   },
   "engines": {
     "node": "~0.4.12"

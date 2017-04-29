@@ -4,7 +4,7 @@ var path = require('path');
 var cons = require('consolidate');
 
 var port = 8080;
-var app = express();
+var app = module.exports = express();
 var swig = require('swig');
 
 // Configure View and Handlebars
@@ -19,7 +19,8 @@ var bodyParser = require('body-parser')
 app.use(bodyParser.json())
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
-var server = app.listen(port);
+if(!module.parent){ app.listen(port); }
+
 console.log("Application started. Listening on port:" + port);
 
 // console.log('Node listening on port %s', port);
@@ -81,8 +82,6 @@ var rcsdk = new ringcentral({
     });
 
 
-
 module.exports = {
-    server : server,
     app : app
 };
