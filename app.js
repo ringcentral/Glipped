@@ -19,8 +19,10 @@ var bodyParser = require('body-parser')
 app.use(bodyParser.json())
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
-app.listen(port);
-console.log('Node listening on port %s', port);
+var server = app.listen(port);
+console.log("Application started. Listening on port:" + port);
+
+// console.log('Node listening on port %s', port);
 
 var ringcentral = require('ringcentral');
 
@@ -77,3 +79,10 @@ var rcsdk = new ringcentral({
                 res.send("E_NOT_LOGGED_IN");
             });
     });
+
+
+
+module.exports = {
+    server : server,
+    app : app
+};

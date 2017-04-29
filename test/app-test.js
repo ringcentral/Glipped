@@ -1,8 +1,12 @@
 'use strict';
 
 var expect = require('chai').expect;
-var app = require('../app.js');
+var app = require('../app').app;
+var server = require('../app').server;
 var SDK = require("../node_modules/ringcentral/src/SDK");
+var request = require('supertest').agent(server);
+
+
 
 describe('Glipped.InviteUsers', function() {
 
