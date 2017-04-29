@@ -31,8 +31,8 @@ $ vi .env
 $ npm start
 ```
 
+** Application would be started on port 8080 ( http://localhost:8080 )
 
-Then click the `Glip` badge above to invite users to Glip.
-
-![APP screenshots](assets/badge.png) 
+Then click the `Glip` badge to invite users to Glip.
+ 
 [![Chat: RingCentral](https://img.shields.io/badge/Chat-RingCentral-orange.svg)](http://localhost:8080/)
