@@ -32,12 +32,7 @@ $ npm start
 ```
 
 
-Go to the URL:
-
-```
-http://localhost:8080
-````
-
-Then click the `Glip` badge to invite users to Glip.
+Then click the `Glip` badge above to invite users to Glip.
 
 ![APP screenshots](assets/badge.png) 
+[![Chat: RingCentral](https://img.shields.io/badge/Chat-RingCentral-orange.svg)](http://localhost:8080/)
