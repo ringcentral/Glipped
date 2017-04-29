@@ -7,11 +7,17 @@ var port = 8080;
 var app = module.exports = express();
 var swig = require('swig');
 
+// handlebars initiation
+var exphbs = require('express-handlebars');
+var hbs = exphbs.create({});
+
 // Configure View and Handlebars
 app.use(express.static(path.join(__dirname)));
-app.engine('.html', cons.swig)
+// app.engine('.html', cons.swig)
+app.engine('handlebars', hbs.engine);
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'html');
+app.set('view engine', 'handlebars');
+// app.set('view engine', 'html');
 
 
 // Create body parsers for application/json and application/x-www-form-urlencoded
@@ -42,7 +48,7 @@ var rcsdk = new ringcentral({
     });
     // Route for the inviteDemo
     app.get('/', function (req, res) {
-        res.render('index');
+        res.render('index', {RClogo: process.env.RC_LOGO});
         rcsdk.platform()
             .login({
                 username: process.env.RC_USERNAME,
