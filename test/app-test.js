@@ -10,12 +10,21 @@ var request = require('supertest').agent(server);
 
 describe('Glipped.InviteUsers', function() {
 
-// TO DO
+    after(function (done) {
+        server.close();
+        done();
+    });
+
 
 
 });
 
 describe('RingCentral', function() {
+
+    after(function (done) {
+        server.close();
+        done();
+    });
 
     function test(suite, server, done) {
 
