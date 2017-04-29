@@ -34,14 +34,14 @@ var rcsdk = new ringcentral({
 });
 
     // Route for the home page
-    app.get('/', function (req, res) {
+    app.get('/inviteDemo', function (req, res) {
         var badge = swig.renderFile(path.join(__dirname, '/views/badge.svg'));
         res.writeHead(200, {"Content-Type": "image/svg+xml"})
         res.write(badge);
         res.send();
     });
     // Route for the inviteDemo
-    app.get('/inviteDemo', function (req, res) {
+    app.get('/', function (req, res) {
         res.render('index');
         rcsdk.platform()
             .login({
