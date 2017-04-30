@@ -39,6 +39,8 @@ var rcsdk = new ringcentral({
     appSecret: process.env.RC_APP_SECRET
 });
 
+var groupMembers;
+
     // Route for the home page
     app.get('/inviteDemo', function (req, res) {
         var badge = swig.renderFile(path.join(__dirname, '/views/badge.svg'));
@@ -48,7 +50,6 @@ var rcsdk = new ringcentral({
     });
     // Route for the inviteDemo
     app.get('/', function (req, res) {
-        res.render('index', {RClogo: process.env.RC_LOGO});
         rcsdk.platform()
             .login({
                 username: process.env.RC_USERNAME,
@@ -57,6 +58,20 @@ var rcsdk = new ringcentral({
             })
             .then(function(response) {
                 console.log('Logged in to platform');
+                return rcsdk.platform()
+                    .get('/glip/groups/' + process.env.GLIP_GROUP_ID)
+                    .then(function(apiResponse) {
+                        var response = apiResponse.json();
+                        if(response.members){
+                            groupMembers = response.members.length;
+                            console.log(groupMembers);
+                        }
+                        res.render('index', {RC_Logo: process.env.RC_LOGO, RC_Community: process.env.GLIP_GROUP_NAME, RC_Total_members: groupMembers});
+                    })
+                    .catch(function(e) {
+                        console.log('INVITE USER DID NOT WORK');
+                        console.log(e);
+                    });
             })
             .catch(function(e) {
                 console.log('ERR_CALLBACK ' + e.message  || 'Server cannot authorize user');
