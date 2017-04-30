@@ -85,11 +85,6 @@ Point to `http://localhost:8080/`.
 **Note:** the image for the logo of the landing page
 is retrieved from the `RC_LOGO` parameter specified in the .ENV file. If you do not provide the `URL` in the `.ENV` file, it won't be shown.
 
-## To run the unit tests:
-
-```
-npm test
-```
 
 ## Dependencies
 
