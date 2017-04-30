@@ -2,7 +2,6 @@
 [![Code Climate](https://img.shields.io/codeclimate/github/anilkumarbp/Glipped.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Chat: RingCentral](https://img.shields.io/badge/Chat-RingCentral-orange.svg)](http://localhost:8080/)
-![APP screenshots](assets/demo.png)
  
 # Glipped
 
