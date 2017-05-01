@@ -35,19 +35,19 @@ $ npm install
 $ cp config-sample.env.txt .env
 $ vi .env
 ```
-Enter the indicated values :
 
-## .env
-    * **GLIP_APP_KEY=** Your application's `app_key`
-    * **GLIP_APP_SECRET=** Your application's `app_secret`
+1. Enter the indicated values:
+ 
+    * **GLIP_APP_KEY=** Your application's `app_key`  
+    * **GLIP_APP_SECRET=** Your application's `app_secret`  
     * **GLIP_APP_SERVER_URL=** Either `sandbox` -OR- `production`
     * **GLIP_USERNAME=** Glip User's `phone-number`
     * **GLIP_EXTENSION=** Glip User's `extension`
     * **GLIP_PASSWORD=** Glip User's `password`
     * **GLIP_LOGO=** Organizations's `logo` ( a http / https link to the Logo )
     * **GLIP_GROUP_NAME=** Organization's `name`
-    * **GLIP_GROUP_ID=** Group ID of the glip `group`
-    
+    * **GLIP_GROUP_ID=** Group ID of the glip `group`  
+        
 ** To GET the `groupId` of the group please ref to [Get Group List](https://developer.ringcentral.com/api-explorer/latest/index.html#/!/Glip_API/loadGroupList);    
 
 ## Operation
