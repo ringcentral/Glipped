@@ -13,11 +13,10 @@ var hbs = exphbs.create({});
 
 // Configure View and Handlebars
 app.use(express.static(path.join(__dirname)));
-// app.engine('.html', cons.swig)
 app.engine('handlebars', hbs.engine);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'handlebars');
-// app.set('view engine', 'html');
+
 
 
 // Create body parsers for application/json and application/x-www-form-urlencoded
@@ -29,7 +28,6 @@ if(!module.parent){ app.listen(port); }
 
 console.log("Application started. Listening on port:" + port);
 
-// console.log('Node listening on port %s', port);
 
 var ringcentral = require('ringcentral');
 
