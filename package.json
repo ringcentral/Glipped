@@ -36,7 +36,9 @@
     "sinon": "^1.17.4",
     "superagent": "^3.5.2",
     "supertest": "^3.0.0",
-    "swig": "^1.4.2"
+    "swig": "^1.4.2",
+    "istanbul": "~0.2.4",
+    "coveralls": "~2.7.1"
   },
   "devDependencies": {
     "jest": "^19.0.2",
