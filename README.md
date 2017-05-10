@@ -5,7 +5,10 @@
 [![npm (scoped)](https://img.shields.io/npm/v/@cycle/core.svg)]()
 [![David](https://img.shields.io/david/expressjs/express.svg)](https://david-dm.org/anilkumarbp/glipped)
 [![Coverage Status](https://coveralls.io/repos/github/anilkumarbp/Glipped/badge.svg?branch=master)](https://coveralls.io/github/anilkumarbp/Glipped?branch=master)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fb9bbae6b5f34945b2af1f283fc8538a)](https://www.codacy.com/app/anilkumarbp/Glipped?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=anilkumarbp/Glipped&amp;utm_campaign=Badge_Grade)
+[![Scrutinizer Code Quality][https://scrutinizer-ci.com/g/anilkumarbp/Glipped/badges/quality-score.png?b=master]][https://scrutinizer-ci.com/g/anilkumarbp/Glipped/?branch=master]
  
+
 # Glipped
 
 A simple Express Server App to invite users to Glip Groups.
