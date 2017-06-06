@@ -24,7 +24,7 @@ var bodyParser = require('body-parser')
 app.use(bodyParser.json())
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
-if(!module.parent){ app.listen(process.env.port port); }
+if(!module.parent){ app.listen(port); }
 
 console.log("Application started. Listening on port:" + port);
 
