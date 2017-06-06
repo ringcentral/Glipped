@@ -33,7 +33,7 @@ $ cd glipped
 $ npm install
 ```
 
-## Run the Program
+## Running `Glipped` locally
 
 ```bash
 $ cp config-sample.env.txt .env
@@ -52,14 +52,18 @@ $ vi .env
     * **GLIP_GROUP_NAME=** Organization's `name`
     * **GLIP_GROUP_ID=** Group ID of the glip `group`  
         
-** To GET the `groupId` of the group please ref to [Get Group List](https://developer.ringcentral.com/api-explorer/latest/index.html#/!/Glip_API/loadGroupList);    
+** To GET the `groupId` of the group please ref to [Get Group List](https://developer.ringcentral.com/api-explorer/latest/index.html#/!/Glip_API/loadGroupList);      
 
-## Operation
-
-To start this application locally:
 ```
 npm start
 ```
+
+## Running `Glipped` on Heroku
+
+If you already have your Glip email address and password, you can use [Heroku One-Button Deployment](https://devcenter.heroku.com/articles/heroku-button).
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 
 To run the unit tests:
 ```
