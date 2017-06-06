@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cons = require('consolidate');
 
-var port = 8080;
+var port = 3000;
 var app = module.exports = express();
 var swig = require('swig');
 
@@ -24,7 +24,7 @@ var bodyParser = require('body-parser')
 app.use(bodyParser.json())
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
-if(!module.parent){ app.listen(port); }
+if(!module.parent){ app.listen(process.env.port port); }
 
 console.log("Application started. Listening on port:" + port);
 
