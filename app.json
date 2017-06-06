@@ -1,0 +1,59 @@
+{
+    "name": "Glipped",
+    "description": "Easy way for developers to add Guest Users into Public Groups",
+    "repository": "https://github.com/anilkumarbp/Glipped.git",
+    "keywords": [
+        "RingCentral",
+        "ringcentral",
+        "glip",
+        "heroku"
+    ],
+    "scripts": {
+        "postdeploy": "npm install"
+    },
+    "formation": [
+        {
+            "process": "web",
+            "quantity": 1
+        }
+    ],
+    "website": "https://developers.ringcentral.com",
+    "env": {
+        "GLIP_APP_KEY": {
+            "description": "Your RingCentral Application Key from the Developer Portal",
+            "required": true
+        },
+        "GLIP_APP_SECRET": {
+            "description": "Your RingCentral Application Secret from the Developer Portal",
+            "required": true
+        },
+        "GLIP_APP_SERVER_URL": {
+            "description": "Will this be operating with a RingCentral Sandbox or Production account? accepts either: 'sandbox' or 'production'",
+            "required": true
+        },
+        "GLIP_USERNAME": {
+            "description": "Your RingCentral Account Administrative Username (phone number). Expected format: [countryCode][numberWithoutSpecialCharactersParensOrHyphens], example: 12345678901",
+            "required": true
+        },
+        "GLIP_EXTENSION": {
+            "description": "Your RingCentral Account Administrative User Extension",
+            "required": true
+        },
+        "GLIP_PASSWORD": {
+            "description": "Your RingCentral Account Administrative User Password",
+            "required": true
+        },
+        "GLIP_LOGO": {
+            "description": "Logo you would want to use",
+            "required": false
+        },
+        "GLIP_GROUP_NAME": {
+            "description": "Name of the Public Glip Group",
+            "required": false
+        },
+        "GLIP_GROUP_ID": {
+            "description": "GroupId of the Group",
+            "required": true
+        }
+    }
+}
