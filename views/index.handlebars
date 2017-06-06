@@ -65,10 +65,18 @@
         this.sendInvite = function(userInvite='') {
             console.log('The email id padded to post method is ', userInvite);
             $.post( '/inviteUser', {userInvite: userInvite}, function( data ) {
-                console.log("Back the funciton ");
-                console.log("the response back is :" + data);
+                if(typeof data == 'string') {
+                    if(Number(data) <= 100) {
+                        $("#invite-button").attr("class", "btn btn-success").html('You just got Glipped, Check your inbox !');
+                    }
+                    else {
+                        $("#invite-button").attr("class", "btn btn-success").html('You are currently in waiting list to be added to he ')
+                    }
+                }
+
+                console.log("the response back is :" + JSON.stringify(data));
                 $('#invite-email').remove();
-                $("#invite-button").attr("class", "btn btn-success").html('You just got Glipped, Check your inbox !').attr('disabled', 'disabled').css({
+                $("#invite-button").attr('disabled', 'disabled').css({
                     'position' : 'absolute',
                     'left' : '50%',
                     'top' : '70%',

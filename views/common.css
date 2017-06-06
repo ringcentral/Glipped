@@ -4,12 +4,24 @@ div {
     margin-right: auto;
 }
 
-#container {
-    width: 640px; /*can be in percentage also.*/
-    height: auto;
-    margin: 0 auto;
-    padding: 10px;
-    position: relative;
+/*#container {*/
+    /*width: 640px; !*can be in percentage also.*!*/
+    /*height: auto;*/
+    /*margin: 0 auto;*/
+    /*padding: 10px;*/
+    /*position: relative;*/
+/*}*/
+
+.invite-email {
+    display: block !important;
+    width: 300px !important;
+    margin-left: 1px !important;
+}
+
+.input-group-btn {
+    /* width: 1%; */
+    white-space: nowrap !important;
+    vertical-align: middle !important;
 }
 
 #svgMain {margin-left:auto; margin-right:auto; display:block; margin-top: 100px;}

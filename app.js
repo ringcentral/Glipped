@@ -38,6 +38,7 @@ var rcsdk = new ringcentral({
 });
 
 var groupMembers;
+var userList = [];
 
     // Route for the home page
     app.get('/inviteDemo', function (req, res) {
@@ -82,6 +83,7 @@ var groupMembers;
  // Route for the invite user
     app.post('/inviteUser', urlencodedParser, function (req, res, next) {
         var userInvite = [ req.body.userInvite || '' ];
+        userList.push(userInvite);
         rcsdk.platform().loggedIn()
             .then(function(status) {
                 return rcsdk.platform()
@@ -90,7 +92,10 @@ var groupMembers;
                 		})
                 	.then(function(response) {
                 		console.log('The response is :', response.json());
-                        res.send(response.json());
+                        console.log('The total number of users invited to the grpup is :'+ userList.length);
+                        console.log('The total number of users registered in the grpup is :'+response.json().members.length);
+                        console.log("The type of data is :" + typeof userList.length);
+                        res.send(userList.length.toString());
                 	})
                     .catch(function(e) {
                         console.log('INVITE USER DID NOT WORK');
