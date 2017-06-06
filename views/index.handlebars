@@ -16,11 +16,12 @@
     <div class="text-center">
         <!--<img class="logo" src='{{{ RC_Logo }}}' id="RCLogo" width="112px" height="112px">-->
         <!--<img class="logo" src="http://localhost:8080/assets/rsz_botman1.png" id="logo" width="auto" height="auto" >-->
+        <!--<img class="logo" src="http://localhost:8080/assets/rsz_botman1.png" id="logo" width="auto" height="auto" >-->
         <!--<img class="logo" src="http://localhost:8080/assets/plus.png" id="plus" width="30px" height="30px" >&nbsp;&nbsp;-->
         <img class="logo" src="/assets/glip.png" id="logo" width="112px" height="112px" >
     </div>
     <br><br>
-    <div class="container">
+    <div class="container-fixed">
 
         <div class="col-lg-4 col-lg-offset-4">
             <div class="input-group">
@@ -31,16 +32,16 @@
                     Currently <strong>{{{ RC_Total_members }}}</strong> Users registered.
                 </p>
             </div>
-        </div><br><br>
+        </div>
 
         <div class="col-lg-4 col-lg-offset-4">
             <div class="input-group">
                 <input type="email" placeholder="Email" id="invite-email" class="form-control" />
                 <span class="input-group-btn">
-                <button class="btn btn-primary" id="invite-button" type="submit" onclick="demo.sendInvite($('#invite-email').val());">Invite!</button>
-            </span>
+            <button class="btn btn-primary" id="invite-button" type="submit" onclick="demo.sendInvite($('#invite-email').val());">Invite!</button>
+        </span>
             </div>
-        </div><br><br><br>
+        </div>
 
 
         <div class="col-lg-4 col-lg-offset-4">
@@ -54,7 +55,7 @@
                     If you do not receive an invite shortly please send an email to <a href="mailto:devsupport@ringcentral.com">devsupport@ringcentral.com</a>
                 </p>
             </div>
-        </div><br><br><br>
+        </div>
 
 
     </div>
@@ -77,11 +78,7 @@
                 console.log("the response back is :" + JSON.stringify(data));
                 $('#invite-email').remove();
                 $("#invite-button").attr('disabled', 'disabled').css({
-                    'position' : 'absolute',
-                    'left' : '50%',
-                    'top' : '70%',
-                    'margin-left' : -$('#invite-button').outerWidth()/2,
-                    'margin-top' : -$('#invite-button').outerHeight()/2
+                    'position' : 'relative',
                 });
             });
         }
