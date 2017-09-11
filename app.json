@@ -19,31 +19,31 @@
     ],
     "website": "https://developers.ringcentral.com",
     "env": {
-        "GLIP_APP_KEY": {
+        "RINGCENTRAL_APP_KEY": {
             "description": "Your RingCentral Application Key from the Developer Portal",
             "required": true
         },
-        "GLIP_APP_SECRET": {
+        "RINGCENTRAL_APP_SECRET": {
             "description": "Your RingCentral Application Secret from the Developer Portal",
             "required": true
         },
-        "GLIP_APP_SERVER_URL": {
+        "RINGCENTRAL_APP_SERVER_URL": {
             "description": "Will this be operating with a RingCentral Sandbox or Production account? accepts either: 'sandbox' or 'production'",
             "required": true
         },
-        "GLIP_USERNAME": {
+        "RINGCENTRAL_USERNAME": {
             "description": "Your RingCentral Account Administrative Username (phone number). Expected format: [countryCode][numberWithoutSpecialCharactersParensOrHyphens], example: 12345678901",
             "required": true
         },
-        "GLIP_EXTENSION": {
+        "RINGCENTRAL_EXTENSION": {
             "description": "Your RingCentral Account Administrative User Extension",
             "required": true
         },
-        "GLIP_PASSWORD": {
+        "RINGCENTRAL_PASSWORD": {
             "description": "Your RingCentral Account Administrative User Password",
             "required": true
         },
-        "GLIP_LOGO": {
+        "APP_LOGO": {
             "description": "Logo you would want to use",
             "required": false
         },
