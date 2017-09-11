@@ -42,13 +42,13 @@ $ vi .env
 
 1. Enter the indicated values:
  
-    * **GLIP_APP_KEY=** Your application's `app_key`  
-    * **GLIP_APP_SECRET=** Your application's `app_secret`  
-    * **GLIP_APP_SERVER_URL=** Either `sandbox` -OR- `production`
-    * **GLIP_USERNAME=** Glip User's `phone-number`
-    * **GLIP_EXTENSION=** Glip User's `extension`
-    * **GLIP_PASSWORD=** Glip User's `password`
-    * **GLIP_LOGO=** Organizations's `logo` ( a http / https link to the Logo )
+    * **RINGCENTRAL_APP_KEY=** Your application's `app_key`  
+    * **RINGCENTRAL_APP_SECRET=** Your application's `app_secret`  
+    * **RINGCENTRAL_APP_SERVER_URL=** Either `sandbox` -OR- `production`
+    * **RINGCENTRAL_USERNAME=** Glip User's `phone-number`
+    * **RINGCENTRAL_EXTENSION=** Glip User's `extension`
+    * **RINGCENTRAL_PASSWORD=** Glip User's `password`
+    * **APP_LOGO=** Organizations's `logo` ( a http / https link to the Logo )
     * **GLIP_GROUP_NAME=** Organization's `name`
     * **GLIP_GROUP_ID=** Group ID of the glip `group`  
         
