@@ -19,27 +19,27 @@
     ],
     "website": "https://developers.ringcentral.com",
     "env": {
-        "RINGCENTRAL_APP_KEY": {
+        "RC_APP_KEY": {
             "description": "Your RingCentral Application Key from the Developer Portal",
             "required": true
         },
-        "RINGCENTRAL_APP_SECRET": {
+        "RC_APP_SECRET": {
             "description": "Your RingCentral Application Secret from the Developer Portal",
             "required": true
         },
-        "RINGCENTRAL_APP_SERVER_URL": {
+        "RC_APP_SERVER_URL": {
             "description": "Will this be operating with a RingCentral Sandbox or Production account? accepts either: 'sandbox' or 'production'",
             "required": true
         },
-        "RINGCENTRAL_USERNAME": {
+        "RC_USERNAME": {
             "description": "Your RingCentral Account Administrative Username (phone number). Expected format: [countryCode][numberWithoutSpecialCharactersParensOrHyphens], example: 12345678901",
             "required": true
         },
-        "RINGCENTRAL_EXTENSION": {
+        "RC_EXTENSION": {
             "description": "Your RingCentral Account Administrative User Extension",
             "required": true
         },
-        "RINGCENTRAL_PASSWORD": {
+        "RC_PASSWORD": {
             "description": "Your RingCentral Account Administrative User Password",
             "required": true
         },
