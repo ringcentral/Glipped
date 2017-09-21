@@ -19,11 +19,11 @@
     ],
     "website": "https://developers.ringcentral.com",
     "env": {
-        "RC_APP_KEY": {
+        "RC_CLIENT_ID": {
             "description": "Your RingCentral Application Key from the Developer Portal",
             "required": true
         },
-        "RC_APP_SECRET": {
+        "RC_CLIENT_SECRET": {
             "description": "Your RingCentral Application Secret from the Developer Portal",
             "required": true
         },
