@@ -32,15 +32,15 @@
             "required": true
         },
         "RC_USERNAME": {
-            "description": "Your RingCentral Account Administrative Username (phone number). Expected format: [countryCode][numberWithoutSpecialCharactersParensOrHyphens], example: 12345678901",
+            "description": "Your RingCentral Account Username (phone number) for any Glip user that can invite guests to the Glip Team. Expected format: This should be in the E.164 format such as [countryCode][numberWithoutSpecialCharactersParensOrHyphens], example: +16505550123",
             "required": true
         },
         "RC_EXTENSION": {
-            "description": "Your RingCentral Account Administrative User Extension",
+            "description": "Your RingCentral Account User Extension",
             "required": true
         },
         "RC_PASSWORD": {
-            "description": "Your RingCentral Account Administrative User Password",
+            "description": "Your RingCentral Account User Password",
             "required": true
         },
         "APP_LOGO": {
