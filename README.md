@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/ringcentral/Glipped.svg?branch=master)](https://travis-ci.org/ringcentral/Glipped)
 [![Code Climate](https://img.shields.io/codeclimate/github/anilkumarbp/Glipped.svg)](https://codeclimate.com/github/anilkumarbp/Glipped)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Chat: RingCentral](https://img.shields.io/badge/Chat-RingCentral-orange.svg)](http://localhost:8080/)
+[![Chat: RingCentral](https://img.shields.io/badge/Chat-RingCentral-orange.svg)](https://glipped.herokuapp.com/)
 [![npm (scoped)](https://img.shields.io/npm/v/@cycle/core.svg)]()
 [![David](https://img.shields.io/david/expressjs/express.svg)](https://david-dm.org/anilkumarbp/glipped)
 [![Coverage Status](https://coveralls.io/repos/github/anilkumarbp/Glipped/badge.svg?branch=master)](https://coveralls.io/github/anilkumarbp/Glipped?branch=master)
