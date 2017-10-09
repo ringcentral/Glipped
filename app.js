@@ -32,9 +32,9 @@ console.log("Application started. Listening on port:" + port);
 var ringcentral = require('ringcentral');
 
 var rcsdk = new ringcentral({
-    server: process.env.GLIP_APP_SERVER_URL,
-    appKey: process.env.GLIP_APP_KEY,
-    appSecret: process.env.GLIP_APP_SECRET
+    server: process.env.RC_APP_SERVER_URL,
+    appKey: process.env.RC_CLIENT_ID,
+    appSecret: process.env.RC_CLIENT_SECRET
 });
 
 var groupMembers;
@@ -53,9 +53,9 @@ var userList = [];
         console.log('Insdei');
         rcsdk.platform()
             .login({
-                username: process.env.GLIP_USERNAME,
-                extension: process.env.GLIP_EXTENSION || null,
-                password: process.env.GLIP_PASSWORD
+                username: process.env.RC_USERNAME,
+                extension: process.env.RC_EXTENSION || null,
+                password: process.env.RC_PASSWORD
             })
             .then(function(response) {
                 console.log('Logged in to platform');
@@ -67,7 +67,7 @@ var userList = [];
                             groupMembers = response.members.length;
                             console.log(groupMembers);
                         }
-                        res.render('index', {RC_Logo: process.env.GLIP_LOGO, RC_Community: process.env.GLIP_GROUP_NAME, RC_Total_members: groupMembers, RC_groupId: process.env.GLIP_GROUP_ID});
+                        res.render('index', {RC_Logo: process.env.APP_LOGO, RC_Community: process.env.GLIP_GROUP_NAME, RC_Total_members: groupMembers, RC_groupId: process.env.GLIP_GROUP_ID});
                     })
                     .catch(function(e) {
                         console.log('INVITE USER DID NOT WORK');
